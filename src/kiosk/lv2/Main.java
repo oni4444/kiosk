@@ -17,25 +17,13 @@ public class Main {
 
         int num = 1; //??? 왜 변수는 초기화 해야하나요
 
+        for (int i = 0; i < menuItems.size(); i++) {
+            System.out.println(menuItems.get(i));
+        }
+
         System.out.print("메뉴를 선택하세요: ");
         sc.nextInt();
 
-        do {
-            switch (num) {
-                case 1:
-                    System.out.println(menuItems.get(0)); // 왜 주소값? 리스트에 정의했는데
-                    break;
-                case 2:
-                    System.out.println(menuItems.get(1));
-                    break;
-                case 3:
-                    System.out.println(menuItems.get(2));
-                    break;
-                case 4:
-                    System.out.println(menuItems.get(3));
-                    break;
-            }
-        } while (num == 0);
-
+        System.out.println(menuItems.get(0));
     }
 }
