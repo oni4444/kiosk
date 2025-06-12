@@ -32,4 +32,9 @@ public class MenuItem {
     String getExplain() {
         return explain;
     }
+
+    @Override
+    public String toString() {
+        return "메뉴 이름: " + name + ", 가격: " + price + ", 설명: " + explain;
+    }
 }
